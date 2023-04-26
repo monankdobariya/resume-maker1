@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumePreviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            app:cardBackgroundColor="#655DBB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Resume"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_55sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Personal Details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="Name" />
+
+                <TextView
+                    android:id="@+id/txtaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="Address" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="email" />
+
+                <TextView
+                    android:id="@+id/txtphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="phone" />
+
+                <TextView
+                    android:id="@+id/txtbdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="phone" />
+
+                <TextView
+                    android:id="@+id/txtfacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="phone" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Education"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtcourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="course" />
+
+                <TextView
+                    android:id="@+id/txtschool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="school" />
+
+                <TextView
+                    android:id="@+id/txtyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="year" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Experience"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtcompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="company name" />
+
+                <TextView
+                    android:id="@+id/txtjob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="job" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtsdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="state date" />
+
+                    <TextView
+                        android:id="@+id/txtldate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="state date" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Skills"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtskills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="skills" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Objective"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtobjective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="Objective" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:text="Reference"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtreference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="reference" />
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="title" />
+
+                <TextView
+                    android:id="@+id/txtcompanyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="company name" />
+
+                <TextView
+                    android:id="@+id/txtemail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="email1" />
+
+                <TextView
+                    android:id="@+id/txtphone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="phone1" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

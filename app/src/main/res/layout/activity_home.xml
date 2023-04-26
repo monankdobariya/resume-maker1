@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            app:cardBackgroundColor="#655DBB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Resume"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Allow this permission"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Messages"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="camera"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Photos"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkcontacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Contacts"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checklocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Location"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Enter your gender"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:checked="false"
+                android:text="  Male"
+                android:textSize="@dimen/_14ssp" />
+
+            <RadioButton
+                android:id="@+id/radiofemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:checked="false"
+                android:text="  Female"
+                android:textSize="@dimen/_14ssp" />
+
+            <RadioButton
+                android:id="@+id/radioother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:checked="false"
+                android:text="  Other"
+                android:textSize="@dimen/_14ssp" />
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/createresume"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            app:cardBackgroundColor="#655DBB"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="Create Your Resume"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

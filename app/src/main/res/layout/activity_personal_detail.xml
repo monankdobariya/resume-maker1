@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonalDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            app:cardBackgroundColor="#655DBB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Personal Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/arrow" />
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardeducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_55sdp"
+                        android:src="@drawable/manuser" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Personal Details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Name">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Address(Optional)">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Email">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtemail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Phone">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtphone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Date of Birth(Optional)">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtb_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Facebook i'd">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtfacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/image"-->
+<!--                    android:id="@+id/imgphoto"/>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardpersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_67sdp"
+                        android:src="@drawable/education" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Education"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Course / Degree">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtcourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="School / University">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSchool"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Year">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardexperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_65sdp"
+                        android:src="@drawable/experience" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Experience"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Company Name">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtcompany1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Job Title">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edttitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Start Date">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtstartdate"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="50dp"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="End Date">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtenddate"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="50dp"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardskills"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_83sdp"
+                        android:src="@drawable/skills" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Skills"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Skills">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtskills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardobjective"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_77sdp"
+                        android:src="@drawable/target" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:text="Objective"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Objective">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtobjective"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardreference"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="#655DBB"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_76sdp"
+                        android:src="@drawable/exchange" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="Reference"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Reference Name">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtreferencename"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Job title">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Company name">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtcompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Email">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Phone">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
